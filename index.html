@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Calculator Suite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🧮 Ultimate Calculator Suite</h1>
+        <nav>
+            <button class="nav-btn" data-section="basic">🔢 Basic</button>
+            <button class="nav-btn" data-section="scientific">🎓 Scientific</button>
+            <button class="nav-btn" data-section="finance">💰 Finance</button>
+            <button class="nav-btn" data-section="math">📐 Math Tools</button>
+            <button class="nav-btn" data-section="custom">🧮 Custom</button>
+        </nav>
+        <button id="darkModeToggle" title="Toggle dark mode">🌙</button>
+    </header>
+
+    <main>
+        <section id="basic" class="calc-section active">
+            <h2>🔢 Basic Calculator</h2>
+            <div class="calculator" id="basic-calculator"></div>
+        </section>
+        <section id="scientific" class="calc-section">
+            <h2>🎓 Scientific Calculator</h2>
+            <div class="calculator" id="scientific-calculator"></div>
+        </section>
+        <section id="finance" class="calc-section">
+            <h2>💰 Finance Calculator</h2>
+            <div class="calculator" id="finance-calculator"></div>
+        </section>
+        <section id="math" class="calc-section">
+            <h2>📐 Math Tools</h2>
+            <div class="calculator" id="math-calculator"></div>
+        </section>
+        <section id="custom" class="calc-section">
+            <h2>🧮 Custom Tools</h2>
+            <div class="calculator" id="custom-calculator"></div>
+        </section>
+        <aside id="history">
+            <h3>🗂️ History</h3>
+            <ul id="history-list"></ul>
+        </aside>
+        <div class="result-tools">
+            <button id="shareBtn">🧩 Share Result</button>
+            <button id="saveBtn">📈 Save as PDF</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
